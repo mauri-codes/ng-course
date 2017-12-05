@@ -1,9 +1,13 @@
 <div style="text-align:center">
-  <h1>
+  <h1
+    (click)="title_color = 'black'"
+    [ngStyle] ="{'color': title_color}">
     Welcome to {{title}}!
   </h1>
-  {{side}}
+  <b>{{side}}</b>
   <label> side: <input type="text" [(ngModel)] = "side" placeholder="side"></label>
+  <b>{{title_color}}</b>
+  <label> color title: <input type="text" [(ngModel)] = "title_color" placeholder="side"></label>
   <div
     (click)="index = (index + 1) % 5"
     [ngStyle]="{'background-color': colors[index], 'width':side+'px', 'height': side+'px'}">

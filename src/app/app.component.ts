@@ -11,4 +11,5 @@ export class AppComponent {
   side = 300;
   colors = ['yellow', 'red', 'papayawhip', 'black', 'blue'];
   index = 0;
+  title_color = 'black';
 }
