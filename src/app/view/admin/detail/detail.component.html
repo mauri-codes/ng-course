@@ -6,7 +6,10 @@
 <div class="holder">
   <h4 class="title">{{movie.title | uppercase}}</h4>
   <div [hidden] = "!flag">
-    <img [src] = "movie.image" class="movie-image" (loadstart)="flag = false" (load)="flag = true" >
+    <img [src] = "movie.image" class="movie-image" (loadstart)="loadstart()" (load)="loadfinish()" >
+  </div>
+  <div [hidden] = "flag">
+    <img src = "../../../assets/loading.jpg" class="movie-image" >
   </div>
 
   <br>

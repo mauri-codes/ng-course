@@ -3,12 +3,16 @@
   <div class="row">
     <div class="col-4">
       <div class="list-group" *ngFor="let movie of movies; let pos = index">
-        <a href="#"  class="list-group-item list-group-item-action"
+        <a class="list-group-item list-group-item-action"
           (click)="index = pos"
+           [ngClass] = "{'active': pos === index, 'disabled': !flag}"
         >{{movie.title}}</a>
       </div>
     </div>
-    <div class="col-8"><app-detail [movie]="movies[index]"></app-detail></div>
+    <div class="col-8"><app-detail
+      [movie]="movies[index]"
+      (flagOutput) = "flag = $event"
+    ></app-detail></div>
   </div>
 </div>
 
