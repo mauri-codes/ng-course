@@ -1,0 +1,22 @@
+
+
+<br>
+<br>
+<br>
+<div class="holder">
+  <h4 class="title">{{movie.title | uppercase}}</h4>
+  <div [hidden] = "!flag">
+    <img [src] = "movie.image" class="movie-image" (loadstart)="flag = false" (load)="flag = true" >
+  </div>
+
+  <br>
+  <br>
+  {{movie.genre}}&nbsp;&nbsp;&nbsp;({{movie.year}})
+  <br>
+  {{movie.available}}
+  <br>
+  {{movie.status}}
+  <br>
+  {{movie.price}}
+</div>
+
