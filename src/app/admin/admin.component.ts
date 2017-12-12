@@ -8,6 +8,7 @@ import { Component } from "@angular/core";
 export class AdminComponent {
   title = "Pagina de administrador";
   index = 0;
+  flag = false;
   movies = [
     {
       "id": 1,
