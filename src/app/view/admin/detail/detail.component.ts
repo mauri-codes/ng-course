@@ -1,14 +1,18 @@
-import { Component, Input, Output, EventEmitter } from "@angular/core";
+import { Component, Input, Output, EventEmitter, OnChanges } from "@angular/core";
+import { MoviesService } from "../../../services/movies.service";
+import { Movie } from "../../../app.models";
 
 @Component({
   selector: 'app-detail',
   templateUrl: 'detail.component.html',
   styleUrls: ['detail.component.scss']
 })
-export class DetailComponent {
-  @Input() movie;
+export class DetailComponent implements OnChanges {
+  movie: Movie;
+  @Input() index;
   @Output() flagOutput= new EventEmitter();
   flag = true;
+  constructor(private movieService: MoviesService) {}
   loadstart() {
     this.flag = false;
     this.flagOutput.emit(this.flag);
@@ -16,6 +20,11 @@ export class DetailComponent {
   loadfinish() {
     this.flag = true;
     this.flagOutput.emit(this.flag);
+  }
+  ngOnChanges () {
+    this.movieService.getMovie(this.index).subscribe(
+      movie => this.movie = movie
+    );
   }
 }
 

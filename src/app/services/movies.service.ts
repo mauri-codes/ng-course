@@ -9,6 +9,10 @@ export class MoviesService {
   getMovies(): Observable <Movie[]> {
     return of(this.movies);
   }
+  getMovie( index ): Observable <Movie> {
+    const movie: Movie = this.movies[index];
+    return of(movie);
+  }
   constructor() {
     this.movies = [
       {
