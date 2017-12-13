@@ -9,7 +9,7 @@ import { Movie } from "../../app.models";
 })
 export class AdminComponent {
   title = "Pagina de administrador";
-  index = 0;
+  index = -1;
   flag = false;
   movies: Movie[];
   constructor(
@@ -18,6 +18,7 @@ export class AdminComponent {
     movieService.getMovies().subscribe(
       movies => {
         this.movies = movies;
+        this.index = 0;
       }
     );
   }

@@ -8,11 +8,13 @@ import { Movie } from "../../../app.models";
   styleUrls: ['detail.component.scss']
 })
 export class DetailComponent implements OnChanges {
-  movie: Movie;
-  @Input() index;
+  movie;
+  @Input() movieId;
   @Output() flagOutput= new EventEmitter();
   flag = true;
-  constructor(private movieService: MoviesService) {}
+  constructor(private movieService: MoviesService) {
+    this.movie = {};
+  }
   loadstart() {
     this.flag = false;
     this.flagOutput.emit(this.flag);
@@ -22,9 +24,9 @@ export class DetailComponent implements OnChanges {
     this.flagOutput.emit(this.flag);
   }
   ngOnChanges () {
-    this.movieService.getMovie(this.index).subscribe(
-      movie => this.movie = movie
-    );
+      this.movieService.getMovie(this.movieId).subscribe(
+        movie => this.movie = movie
+      );
   }
 }
 
