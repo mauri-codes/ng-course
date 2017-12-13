@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -7,6 +8,7 @@ import { DetailComponent } from "./view/admin/detail/detail.component";
 
 import { MoviesService } from "./services/movies.service";
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { MoviesService } from "./services/movies.service";
     DetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [
     MoviesService

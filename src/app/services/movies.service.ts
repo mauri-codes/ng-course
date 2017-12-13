@@ -3,17 +3,19 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { Movie } from "../app.models";
 
+import { HttpClient, HttpHeaders } from "@angular/common/http";
+
 @Injectable()
 export class MoviesService {
+  movieUrl = 'http://localhost:3000/movies';
   movies: Movie[];
   getMovies(): Observable <Movie[]> {
-    return of(this.movies);
+    return this.http.get<Movie[]>(this.movieUrl);
   }
   getMovie( index ): Observable <Movie> {
-    const movie: Movie = this.movies[index];
-    return of(movie);
+    return this.http.get<Movie>(this.movieUrl + '/' + index);
   }
-  constructor() {
+  constructor(private http: HttpClient) {
     this.movies = [
       {
         "id": 1,
