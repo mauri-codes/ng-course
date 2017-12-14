@@ -22,4 +22,11 @@ export class AdminComponent {
       }
     );
   }
+  deleteMovie(id) {
+    console.log('hi world ' + id);
+    console.log(this.movies);
+    this.movies = this.movies.slice((id - 1), id);
+    console.log(this.movies);
+    this.index = this.index + 1;
+  }
 }

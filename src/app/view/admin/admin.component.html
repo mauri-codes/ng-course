@@ -13,6 +13,7 @@
       *ngIf="index !== -1"
       [movieId]="movies[index].id"
       (flagOutput) = "flag = $event"
+      (deleteElement)="deleteMovie($event)"
     ></app-detail></div>
   </div>
 </div>

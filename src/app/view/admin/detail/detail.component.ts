@@ -8,12 +8,13 @@ import { Movie } from "../../../app.models";
   styleUrls: ['detail.component.scss']
 })
 export class DetailComponent implements OnChanges {
-  movie;
+  movie: Movie;
   @Input() movieId;
   @Output() flagOutput= new EventEmitter();
+  @Output() deleteElement = new EventEmitter();
   flag = true;
   constructor(private movieService: MoviesService) {
-    this.movie = {};
+    this.movie = <Movie>{};
   }
   loadstart() {
     this.flag = false;
@@ -22,6 +23,9 @@ export class DetailComponent implements OnChanges {
   loadfinish() {
     this.flag = true;
     this.flagOutput.emit(this.flag);
+  }
+  deleteMovie (movieId) {
+    this.deleteElement.emit(movieId);
   }
   ngOnChanges () {
       this.movieService.getMovie(this.movieId).subscribe(

@@ -1,7 +1,4 @@
 
-
-<br>
-<br>
 <br>
 <div class="holder">
   <h4 class="title">{{movie.title | uppercase}}</h4>
@@ -21,5 +18,11 @@
   {{movie.status}}
   <br>
   {{movie.price}}
+  <br>
+  <a href="#" class="btn btn-warning">trailer</a>
+  <br>
+  <br>
+  <a href="#" class="btn btn-primary">modificar</a>
+  <a class="btn btn-danger" (click)="deleteMovie(movie.id)">eliminar</a>
 </div>
 
