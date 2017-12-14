@@ -25,5 +25,6 @@ export class AdminComponent {
   deleteMovie(id) {
     this.movies.splice((id - 1), 1);
     this.index = this.index + 1;
+    this.movieService.deleteMovie(id);
   }
 }

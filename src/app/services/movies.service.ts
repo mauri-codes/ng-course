@@ -11,8 +11,12 @@ export class MoviesService {
   getMovies(): Observable <Movie[]> {
     return this.http.get<Movie[]>(this.movieUrl);
   }
-  getMovie( index ): Observable <Movie> {
-    return this.http.get<Movie>(this.movieUrl + '/' + index);
+  getMovie( id ): Observable <Movie> {
+    return this.http.get<Movie>(this.movieUrl + '/' + id);
+  }
+  deleteMovie (id) {
+    this.http.delete(this.movieUrl + '/' + id)
+      .subscribe(movie => {});
   }
   constructor(private http: HttpClient) {}
 }
