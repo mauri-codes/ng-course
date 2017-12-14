@@ -25,6 +25,7 @@
       "genre": "Fantasia|Ciencia Ficcion",
       "available": "DVD,Blue Ray,online",
       "status": "Disponible,Disponible,Disponible",
+      "link": "https://www.youtube.com/embed/-W8CegO_Ixw",
       "price": 12
     },
     {
@@ -35,6 +36,7 @@
       "genre": "Drama|Accion",
       "available": "DVD,Blue Ray,online",
       "status": "Disponible,Solo en Tienda,Solo Tarjeta",
+      "link": "https://www.youtube.com/embed/owK1qxDselE",
       "price": 15
     },
     {
@@ -45,6 +47,7 @@
       "genre": "Thriller|Accion",
       "available": "DVD,Blue Ray,online",
       "status": "Solo a domicilio,Solo en Tienda,Disponible",
+      "link": "https://www.youtube.com/embed/zrXP6TYK8rY",
       "price": 10
     },
     {
@@ -55,6 +58,7 @@
       "genre": "Drama|History",
       "available": "DVD",
       "status": "Disponible",
+      "link": "https://www.youtube.com/embed/yDA1mK6v-ME",
       "price": 21
     },
     {
@@ -65,6 +69,7 @@
       "genre": "Fantasia|Crimen",
       "available": "DVD,online",
       "status": "Solo en Tienda,Solo a Domicilio",
+      "link": "https://www.youtube.com/embed/hBtSF4-cnzk",
       "price": 13
     },
     {
@@ -75,6 +80,7 @@
       "genre": "Thriller",
       "available": "DVD,Blue Ray,online",
       "status": "Disponible,Disponible,Disponible",
+      "link": "https://www.youtube.com/embed/SgZZDzoJuZs",
       "price": 17
     },
     {
@@ -85,6 +91,7 @@
       "genre": "Fantasia|Accion",
       "available": "DVD,Blue Ray,online",
       "status": "Solo en Tienda,Disponible,Solo Tarjeta",
+      "link": "https://www.youtube.com/embed/PFhSIQO7fw0",
       "price": 11
     },
     {
@@ -95,6 +102,7 @@
       "genre": "Drama|Accion",
       "available": "online",
       "status": "Disponible",
+      "link": "https://www.youtube.com/embed/BM4P7FpEoLc",
       "price": 12
     },
     {
@@ -105,6 +113,7 @@
       "genre": "Drama|Comedia",
       "available": "Blue Ray",
       "status": "Solo a Domicilio",
+      "link": "https://www.youtube.com/embed/drQRl0-nZw4",
       "price": 12
     },
     {
@@ -115,6 +124,7 @@
       "genre": "Crimen|Thriller",
       "available": "DVD,Blue Ray,online",
       "status": "Disponible,Solo a Domicilio,Disponible",
+      "link": "https://www.youtube.com/embed/1u8SQPajS4I",
       "price": 15
     },
     {
@@ -125,6 +135,7 @@
       "genre": "Comedia|Drama",
       "available": "online",
       "status": "Disponible",
+      "link": "https://www.youtube.com/embed/Tw33Xs4Q2r4",
       "price": 8
     },
     {
@@ -135,6 +146,7 @@
       "genre": "Fantasia|Ciencia Ficcion",
       "available": "DVD,Blue Ray,online",
       "status": "Disponible,Disponible,Disponible",
+      "link": "https://www.youtube.com/embed/m8e-FF8MsqU",
       "price": 13
     }
   ],
