@@ -68,6 +68,16 @@
       "price": 13
     },
     {
+      "id": 6,
+      "image": "https://static.rogerebert.com/uploads/movie/movie_poster/psycho-1960/large_qodLPeeuhzSiiWkuldSrlCQGpkz.jpg",
+      "title": "psicosis",
+      "year": 1960,
+      "genre": "Thriller",
+      "available": "DVD,Blue Ray,online",
+      "status": "Disponible,Disponible,Disponible",
+      "price": 17
+    },
+    {
       "id": 7,
       "image": "http://www.phenomena-experience.com/galeria/Historico_peliculas/E/en-busca-del-arca-perdida.jpg",
       "title": "en busca del arca perdida",
