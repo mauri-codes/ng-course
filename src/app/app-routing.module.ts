@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'admin', component: AdminComponent},
   { path: 'users', component: UsersComponent },
   { path: 'movies', component: MoviesComponent },
+  { path: 'movie/:id', component: MoviesComponent },
   { path: 'landing', component: LandingComponent }
 ];
 
