@@ -20,9 +20,9 @@
   <br>
   ({{movie.year}})
   <br>
-  {{movie.available}}
-  <br>
-  {{movie.status}}
+  <div *ngFor="let disp of (movie.available | separator:','); let i = index">
+    {{disp}} -> {{(movie.status | separator: ',')[i]}}
+  </div>
   <br>
   {{movie.price}}
   <br>
