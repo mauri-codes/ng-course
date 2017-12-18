@@ -11,7 +11,14 @@
 
   <br>
   <br>
-  {{movie.genre}}&nbsp;&nbsp;&nbsp;({{movie.year}})
+  <span
+    class="badge badge-warning"
+    style="color: black; font-weight: normal; margin-left: 5px;"
+    *ngFor="let genero of ( movie.genre | separator:'|' )">
+    {{genero}}
+  </span>
+  <br>
+  ({{movie.year}})
   <br>
   {{movie.available}}
   <br>

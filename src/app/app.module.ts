@@ -12,6 +12,7 @@ import { LandingComponent } from "./view/landing/landing.component";
 
 import { MoviesService } from "./services/movies.service";
 
+import { SeparatorPipe } from "./pipes/separator.pipe";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MoviesService } from "./services/movies.service";
     DetailComponent,
     MoviesComponent,
     UsersComponent,
-    LandingComponent
+    LandingComponent,
+    SeparatorPipe
   ],
   imports: [
     BrowserModule,
