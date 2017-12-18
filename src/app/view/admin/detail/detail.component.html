@@ -1,6 +1,6 @@
 
 <br>
-<div class="holder">
+<div class="holder" *ngIf="movie.title">
   <h4 class="title">{{movie.title | uppercase}}</h4>
   <div [hidden] = "!flag">
     <img [src] = "movie.image" class="movie-image" (loadstart)="loadstart()" (load)="loadfinish()" >
@@ -12,9 +12,10 @@
   <br>
   <br>
   <span
-    class="badge badge-warning"
+    class="badge"
     style="color: black; font-weight: normal; margin-left: 5px;"
-    *ngFor="let genero of ( movie.genre | separator:'|' )">
+    *ngFor="let genero of ( movie.genre | separator:'|' )"
+    [appBadge]="genero">
     {{genero}}
   </span>
   <br>

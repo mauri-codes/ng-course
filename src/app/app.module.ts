@@ -14,6 +14,8 @@ import { MoviesService } from "./services/movies.service";
 
 import { SeparatorPipe } from "./pipes/separator.pipe";
 
+import { BadgeDirective } from "./directives/badge.directive";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { SeparatorPipe } from "./pipes/separator.pipe";
     MoviesComponent,
     UsersComponent,
     LandingComponent,
-    SeparatorPipe
+    SeparatorPipe,
+    BadgeDirective
   ],
   imports: [
     BrowserModule,
