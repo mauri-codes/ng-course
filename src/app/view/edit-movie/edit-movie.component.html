@@ -1,9 +1,73 @@
 <div *ngIf="movie" class="row">
   <div class="col col-6">
     <app-detail
-      [movieId]="id"
+      [movie]="movie"
       [buttons]="false"
     ></app-detail>
   </div>
-  {{movie.title}}
+  <br>
+  <form  #heroForm="ngForm">
+    <div class="form-group">
+      <label for="name">Titulo</label>
+      <input type="text"
+             class="form-control"
+             id="name"
+             name="name"
+             required
+             [(ngModel)]="movie.title">
+    </div>
+
+    <div class="form-group">
+      <label for="image">Imagen</label>
+      <input type="text"
+             class="form-control"
+             id="image"
+             name="image"
+             required
+             [(ngModel)]="movie.image">
+    </div>
+
+    <div class="form-group">
+      <label for="year">Año</label>
+      <input type="text"
+             class="form-control"
+             id="year"
+             name="year"
+             required
+             [(ngModel)]="movie.year">
+    </div>
+
+    <div class="form-group">
+      <label for="genre">Genero</label>
+      <input type="text"
+             class="form-control"
+             id="genre"
+             name="genre"
+             required
+             [(ngModel)]="movie.genre">
+    </div>
+
+    <div class="form-group">
+      <label for="available">Disponible</label>
+      <input type="text"
+             class="form-control"
+             id="available"
+             name="available"
+             required
+             [(ngModel)]="movie.available">
+    </div>
+
+    <div class="form-group">
+      <label for="status">Status</label>
+      <input type="text"
+             class="form-control"
+             id="status"
+             name="status"
+             required
+             [(ngModel)]="movie.status">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+
+  </form>
 </div>

@@ -8,7 +8,7 @@ import { Movie } from "../../../app.models";
   styleUrls: ['detail.component.scss']
 })
 export class DetailComponent implements OnChanges {
-  movie: Movie;
+  @Input() movie: Movie;
   @Input() movieId;
   @Input() buttons: boolean;
   @Output() flagOutput= new EventEmitter();
@@ -29,9 +29,11 @@ export class DetailComponent implements OnChanges {
     this.deleteElement.emit(movieId);
   }
   ngOnChanges () {
+    if ( this.buttons ) {
       this.movieService.getMovie(this.movieId).subscribe(
         movie => this.movie = movie
       );
+    }
   }
 }
 
