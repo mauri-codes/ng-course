@@ -25,13 +25,11 @@ export class MoviesComponent implements OnInit {
     }
     if (this.id === -1) {
       this.movieService.getMovies().subscribe(movies => {
-        this.movies = movies
-        console.log('hi movies');
+        this.movies = movies;
       });
     } else {
       this.movieService.getMovie(this.id).subscribe(movie => {
-        this.movie = movie
-        console.log('hello movie');
+        this.movie = movie;
       });
     }
   }

@@ -27,10 +27,15 @@
   <br>
   {{movie.price}}
   <br>
-  <a href="#" class="btn btn-warning">trailer</a>
-  <br>
-  <br>
-  <a href="#" class="btn btn-primary">modificar</a>
-  <a class="btn btn-danger" (click)="deleteMovie(movie.id)">eliminar</a>
+  <ng-container
+    *ngIf="buttons"
+  >
+    <a href="#" class="btn btn-warning">trailer</a>
+    <br>
+    <br>
+    <a href="#" class="btn btn-primary">modificar</a>
+    <a class="btn btn-danger" (click)="deleteMovie(movie.id)">eliminar</a>
+  </ng-container>
+
 </div>
 

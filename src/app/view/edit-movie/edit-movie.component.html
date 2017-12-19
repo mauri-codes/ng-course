@@ -1,0 +1,9 @@
+<div *ngIf="movie" class="row">
+  <div class="col col-6">
+    <app-detail
+      [movieId]="id"
+      [buttons]="false"
+    ></app-detail>
+  </div>
+  {{movie.title}}
+</div>

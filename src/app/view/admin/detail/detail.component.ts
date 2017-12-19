@@ -10,6 +10,7 @@ import { Movie } from "../../../app.models";
 export class DetailComponent implements OnChanges {
   movie: Movie;
   @Input() movieId;
+  @Input() buttons: boolean;
   @Output() flagOutput= new EventEmitter();
   @Output() deleteElement = new EventEmitter();
   flag = true;

@@ -9,6 +9,7 @@ import { DetailComponent } from "./view/admin/detail/detail.component";
 import { MoviesComponent } from "./view/movies/movies.component";
 import { UsersComponent } from "./view/users/users.component";
 import { LandingComponent } from "./view/landing/landing.component";
+import {EditMovieComponent} from "./view/edit-movie/edit-movie.component";
 
 import { MoviesService } from "./services/movies.service";
 
@@ -24,6 +25,7 @@ import { BadgeDirective } from "./directives/badge.directive";
     MoviesComponent,
     UsersComponent,
     LandingComponent,
+    EditMovieComponent,
     SeparatorPipe,
     BadgeDirective
   ],

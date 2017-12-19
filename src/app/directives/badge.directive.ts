@@ -9,7 +9,6 @@ export class BadgeDirective implements OnInit {
     el.nativeElement.style.fontSize = '14px';
   }
   ngOnInit() {
-    console.log(this.appBadge);
     let badge;
     switch ( this.appBadge ) {
       case 'Ciencia Ficcion':
