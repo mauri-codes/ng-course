@@ -19,4 +19,7 @@ export class EditMovieComponent implements OnInit {
       this.movie = movie;
     });
   }
+  onSubmit() {
+    console.log('hi world');
+  }
 }
