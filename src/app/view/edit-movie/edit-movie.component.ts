@@ -20,6 +20,6 @@ export class EditMovieComponent implements OnInit {
     });
   }
   onSubmit() {
-    console.log('hi world');
+    this.movieService.updateMovie(this.movie, this.movie.id);
   }
 }

@@ -14,6 +14,7 @@
              id="name"
              name="name"
              required
+             pattern="^([A-Z][a-z]*[ ])*([A-Z][a-z]*)$"
              [(ngModel)]="movie.title"
               #name="ngModel">
     </div>
@@ -42,6 +43,7 @@
              required
              pattern="[0-9]+"
              [(ngModel)]="movie.year"
+             #hi
              #year="ngModel">
     </div>
     <div [hidden]="(year.valid || year.pristine)" class="alert alert-danger">

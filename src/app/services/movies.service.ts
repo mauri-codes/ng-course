@@ -18,5 +18,8 @@ export class MoviesService {
     this.http.delete(this.movieUrl + '/' + id)
       .subscribe(movie => {});
   }
+  updateMovie ( movie, id ) {
+    this.http.put(this.movieUrl + '/' + id, movie).subscribe();
+  }
   constructor(private http: HttpClient) {}
 }
